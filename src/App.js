@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+      <h1>Hello</h1>
+      <p>
+        {" "}
+        “ I’ve been interested in coding for a while but never taken the jump,
+        until now. I couldn’t recommend this course enough. I’m now in the job
+        of my dreams and so excited about the future. ” Tanya Sinclair UX
+        Engineer
+      </p>
+
+      <p>
+        “ If you want to lay the best foundation possible I’d recommend taking
+        this course. The depth the instructors go into is incredible. I now feel
+        so confident about starting up as a professional developer. ” John
+        Tarkpor Junior Front-end Developer
+      </p>
+
+      <div className="attribution">
+        Challenge by{" "}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
         >
-          Learn React
+          Frontend Mentor
         </a>
-      </header>
+        . Coded by <a href="/">Michaela Kleer</a>.
+      </div>
     </div>
   );
 }
-
-export default App;
