@@ -18,13 +18,24 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 70px;
   font-size: 32px;
+  background-image: url(images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 
+.slider {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
 .text {
   font-weight: 300;
 }
+
 .photo {
   background-image: url(images/pattern-bg.svg);
   background-repeat: no-repeat;
@@ -39,7 +50,6 @@ span {
 .portrait {
   display: block;
   margin: 0 auto;
-  height: 200px;
 }
 
 .slideTwo {
