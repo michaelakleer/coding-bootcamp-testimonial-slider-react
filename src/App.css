@@ -17,7 +17,6 @@ span {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 70px;
   font-size: 32px;
   background-image: url(images/pattern-curve.svg);
@@ -31,25 +30,45 @@ span {
   width: 100%;
   max-width: 850px;
   margin: 0 auto;
+  position: relative;
 }
+
 .text {
   font-weight: 300;
+  line-height: 45px;
+  margin-bottom: 20px;
 }
 
 .photo {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 40px;
   background-image: url(images/pattern-bg.svg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
+  background-size: contain;
 }
 
 .testimonial {
+  padding-top: 30px;
   background-image: url(images/pattern-quotes.svg);
   background-repeat: no-repeat;
+}
+
+.name {
+  font-size: 20px;
 }
 
 .portrait {
   display: block;
   margin: 0 auto;
+}
+
+.slideOne,
+.slideTwo {
+  width: 100%;
+  display: flex;
 }
 
 .slideTwo {
