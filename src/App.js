@@ -6,52 +6,44 @@ import "./App.css";
 export default function App() {
   return (
     <div className="App">
-      <section className="container">
-        <div className="slider">
-          <div className="slideOne">
-            <div className="testimonial">
-              <p className="text">
-                “ I’ve been interested in coding for a while but never taken the
-                jump, until now. I couldn’t recommend this course enough. I’m
-                now in the job of my dreams and so excited about the future. ”
-              </p>
-              <p className="name">
-                Tanya Sinclair <span>UX Engineer</span>{" "}
-              </p>
+      <main>
+        <section className="container">
+          <div className="slider">
+            <div className="slideOne">
+              <div className="testimonial">
+                <p className="text">
+                  “ I’ve been interested in coding for a while but never taken
+                  the jump, until now. I couldn’t recommend this course enough.
+                  I’m now in the job of my dreams and so excited about the
+                  future. ”
+                </p>
+                <p className="name">
+                  Tanya Sinclair <span>UX Engineer</span>{" "}
+                </p>
+              </div>
+              <div className="photo">
+                <img src={Tanya} alt="Portrait of Tanya" className="portrait" />
+              </div>
             </div>
-            <div className="photo">
-              <img src={Tanya} alt="Portrait of Tanya" className="portrait" />
+            <div className="slideTwo">
+              <div className="testimonial">
+                <p className="text">
+                  “ If you want to lay the best foundation possible I’d
+                  recommend taking this course. The depth the instructors go
+                  into is incredible. I now feel so confident about starting up
+                  as a professional developer. ”
+                </p>
+                <p className="name">
+                  John Tarkpor <span>Junior Front-end Developer</span>{" "}
+                </p>
+              </div>
+              <div className="photo">
+                <img src={John} alt="Portrait of John" className="portrait" />
+              </div>
             </div>
           </div>
-          <div className="slideTwo">
-            <div className="testimonial">
-              <p className="text">
-                “ If you want to lay the best foundation possible I’d recommend
-                taking this course. The depth the instructors go into is
-                incredible. I now feel so confident about starting up as a
-                professional developer. ”
-              </p>
-              <p className="name">
-                John Tarkpor <span>Junior Front-end Developer</span>{" "}
-              </p>
-            </div>
-            <div className="photo">
-              <img src={John} alt="Portrait of John" className="portrait" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <div className="attribution">
-        Challenge by{" "}
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Frontend Mentor
-        </a>
-        . Coded by <a href="/">Michaela Kleer</a>.
-      </div>
+        </section>
+      </main>
     </div>
   );
 }
