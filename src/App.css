@@ -40,10 +40,6 @@ span {
   position: relative;
 }
 
-.slideTwo {
-  display: none;
-}
-
 .testimonial {
   color: #202047;
   width: 688px;
@@ -79,5 +75,34 @@ span {
   width: 520px;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 20px 35px 65px -50px #6c52a7;
+}
+
+.next,
+.prev {
+  position: absolute;
+  border: none;
+  background: #fff;
+}
+
+.next {
+  top: 595px;
+  left: 780px;
+  padding: 18px 19px 14px 22px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.prev {
+  top: 595px;
+  left: 727px;
+  padding: 18px 22px 14px 19px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.next:hover,
+.prev:hover {
+  background: #f8f8f8;
+  cursor: pointer;
 }
