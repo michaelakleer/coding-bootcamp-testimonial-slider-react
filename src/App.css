@@ -26,11 +26,12 @@ span {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 70px;
+  padding: 70px 40px;
   font-size: 32px;
   background-image: url(images/pattern-bg.svg);
   background-repeat: no-repeat;
-  background-position: right 15% bottom 51%;
+  background-position: right 3% bottom 64%;
+  background-size: 43rem;
 }
 
 .slideOne,
@@ -44,14 +45,15 @@ span {
 }
 
 .testimonial {
-  max-width: 635px;
-  max-height: 220px;
-  padding-top: 150px;
-  margin-right: -7.5rem;
+  width: 688px;
+  height: 220px;
+  padding-top: 160px;
+  padding-left: 30px;
+  margin-right: -9rem;
   background-image: url(images/pattern-quotes.svg);
   background-repeat: no-repeat;
-  background-position: left 19% top 20%;
-  background-size: 115px 98px;
+  background-position: left 24% top 78%;
+  background-size: 115px 100px;
   z-index: 9;
 }
 
@@ -72,7 +74,6 @@ span {
 }
 
 .portrait {
-  display: block;
-  margin: 0 auto;
   border-radius: 5px;
+  box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.1);
 }
