@@ -10,50 +10,60 @@ span {
 
 .App {
   font-family: "Inter", sans-serif;
-}
-
-.container {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 70px;
-  font-size: 32px;
   background-image: url(images/pattern-curve.svg);
   background-repeat: no-repeat;
   background-position: left bottom;
 }
 
 .slider {
-  display: block;
-  height: 100%;
-  width: 100%;
-  max-width: 850px;
+  padding: 0 40px;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 1350px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 70px;
+  font-size: 32px;
+  background-image: url(images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.slideOne,
+.slideTwo {
+  display: flex;
   position: relative;
+}
+
+.slideTwo {
+  display: none;
+}
+
+.testimonial {
+  max-width: 635px;
+  max-height: 354;
+  padding-top: 150px;
+
+  margin-right: -7.5rem;
+  background-image: url(images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: 10% top;
+  z-index: 9;
+}
+
+.photo {
+  margin: 0 auto;
+  padding: 40px;
+  flex: 1;
 }
 
 .text {
   font-weight: 300;
   line-height: 45px;
   margin-bottom: 20px;
-}
-
-.photo {
-  width: 100%;
-  margin: 0 auto;
-  height: 100%;
-  padding: 40px;
-  background-image: url(images/pattern-bg.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.testimonial {
-  padding-top: 30px;
-  background-image: url(images/pattern-quotes.svg);
-  background-repeat: no-repeat;
 }
 
 .name {
@@ -63,14 +73,5 @@ span {
 .portrait {
   display: block;
   margin: 0 auto;
-}
-
-.slideOne,
-.slideTwo {
-  width: 100%;
-  display: flex;
-}
-
-.slideTwo {
-  display: none;
+  border-radius: 5px;
 }
