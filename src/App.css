@@ -5,7 +5,8 @@
 }
 
 span {
-  color: hsl(240, 18%, 77%);
+  color: #b9b9ce;
+  font-weight: 500;
 }
 
 .App {
@@ -17,7 +18,7 @@ span {
 }
 
 .slider {
-  padding: 0 40px;
+  padding: 0 25px;
 }
 
 .container {
@@ -27,11 +28,10 @@ span {
   display: flex;
   align-items: center;
   padding: 70px 40px;
-  font-size: 32px;
   background-image: url(images/pattern-bg.svg);
   background-repeat: no-repeat;
-  background-position: right 3% bottom 64%;
-  background-size: 43rem;
+  background-position: right 12px bottom 55%;
+  background-size: 42rem;
 }
 
 .slideOne,
@@ -45,6 +45,7 @@ span {
 }
 
 .testimonial {
+  color: #202047;
   width: 688px;
   height: 220px;
   padding-top: 160px;
@@ -52,21 +53,22 @@ span {
   margin-right: -9rem;
   background-image: url(images/pattern-quotes.svg);
   background-repeat: no-repeat;
-  background-position: left 24% top 78%;
-  background-size: 115px 100px;
+  background-position: left 22% top 78%;
+  background-size: 120px 100px;
   z-index: 9;
 }
 
 .photo {
   margin: 0 auto;
-  padding-left: 55px;
+  padding-left: 56px;
   flex: 1;
 }
 
 .text {
   font-weight: 300;
   line-height: 45px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  font-size: 32px;
 }
 
 .name {
@@ -74,6 +76,8 @@ span {
 }
 
 .portrait {
+  width: 520px;
+  height: auto;
   border-radius: 5px;
   box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.1);
 }
