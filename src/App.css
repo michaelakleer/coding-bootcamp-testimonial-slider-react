@@ -13,6 +13,7 @@ span {
   background-image: url(images/pattern-curve.svg);
   background-repeat: no-repeat;
   background-position: left bottom;
+  background-size: 30rem;
 }
 
 .slider {
@@ -29,7 +30,7 @@ span {
   font-size: 32px;
   background-image: url(images/pattern-bg.svg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right 15% bottom 51%;
 }
 
 .slideOne,
@@ -44,26 +45,26 @@ span {
 
 .testimonial {
   max-width: 635px;
-  max-height: 354;
+  max-height: 220px;
   padding-top: 150px;
-
   margin-right: -7.5rem;
   background-image: url(images/pattern-quotes.svg);
   background-repeat: no-repeat;
-  background-position: 10% top;
+  background-position: left 19% top 20%;
+  background-size: 115px 98px;
   z-index: 9;
 }
 
 .photo {
   margin: 0 auto;
-  padding: 40px;
+  padding-left: 55px;
   flex: 1;
 }
 
 .text {
   font-weight: 300;
   line-height: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .name {
