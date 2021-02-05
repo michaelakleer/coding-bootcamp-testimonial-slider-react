@@ -38,13 +38,13 @@ export default function App() {
               <div className="photo">
                 <img src={John} alt="Portrait of John" className="portrait" />
               </div>
+              <button className="button prev" onClick={displayJohn}>
+                <img src={Prev} alt="Previous Button" />
+              </button>
+              <button className="button next" onClick={displayJohn}>
+                <img src={Next} alt="Next Button" />
+              </button>
             </div>
-            <button className="button prev" onClick={displayJohn}>
-              <img src={Prev} alt="Previous Button" />
-            </button>
-            <button className="button next" onClick={displayJohn}>
-              <img src={Next} alt="Next Button" />
-            </button>
           </section>
         </div>
       </div>
@@ -69,13 +69,13 @@ export default function App() {
               <div className="photo">
                 <img src={Tanya} alt="Portrait of Tanya" className="portrait" />
               </div>
+              <button className="button prev" onClick={displayTanya}>
+                <img src={Prev} alt="Previous Button" />
+              </button>
+              <button className="button next" onClick={displayTanya}>
+                <img src={Next} alt="Next Button" />
+              </button>
             </div>
-            <button className="button prev" onClick={displayTanya}>
-              <img src={Prev} alt="Previous Button" />
-            </button>
-            <button className="button next" onClick={displayTanya}>
-              <img src={Next} alt="Next Button" />
-            </button>
           </section>
         </div>
       </div>
