@@ -218,11 +218,15 @@ span {
     background-image: url(images/pattern-curve.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: 30rem;
+    background-size: 275px;
   }
 
   .slider {
     padding: 0 25px;
+    background-image: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: left 152px bottom 264px;
+    background-size: 58px;
   }
 
   .container {
@@ -232,52 +236,51 @@ span {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    padding: 70px 40px;
     background-image: url(images/pattern-bg.svg);
     background-repeat: no-repeat;
-    background-position: left 40px bottom 55%;
-    background-size: 38rem;
+    background-position: left 1px top 5%;
+    background-size: 323px;
   }
 
   .slideOne,
   .slideTwo {
     display: flex;
     flex-direction: column-reverse;
+    height: auto;
   }
 
   .testimonial {
+    padding-top: 30px;
     color: #202047;
-    width: 688px;
-    height: 220px;
-    padding-top: 160px;
-    padding-left: 30px;
-    margin-right: -9rem;
-    background-image: url(images/pattern-quotes.svg);
-    background-repeat: no-repeat;
-    background-position: left 22% top 78%;
-    background-size: 120px 100px;
-    z-index: 9;
-  }
-
-  .photo {
-    margin: 0 auto;
-    padding-left: 56px;
-    flex: 1;
+    width: 311px;
+    height: 228px;
+    text-align: center;
   }
 
   .text {
     font-weight: 300;
-    line-height: 45px;
-    margin-bottom: 35px;
-    font-size: 32px;
+    line-height: 25px;
+    margin-bottom: 18px;
+    font-size: 18px;
   }
 
   .name {
-    font-size: 20px;
+    font-size: 15px;
+  }
+
+  span {
+    display: block;
+    line-height: 19px;
+  }
+
+  .photo {
+    position: relative;
+    bottom: 44px;
+    left: 35px;
   }
 
   .portrait {
-    width: 520px;
+    width: 254px;
     height: auto;
     border-radius: 5px;
     box-shadow: 20px 35px 65px -50px #6c52a7;
@@ -291,17 +294,17 @@ span {
   }
 
   .next {
-    top: 493px;
-    left: 715px;
-    padding: 18px 19px 14px 22px;
+    top: 280px;
+    left: 185px;
+    padding: 10px 13px 6px 13px;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
   }
 
   .prev {
-    top: 493px;
-    left: 663px;
-    padding: 18px 22px 14px 19px;
+    top: 280px;
+    left: 147px;
+    padding: 10px 13px 6px 13px;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
   }
@@ -310,5 +313,9 @@ span {
   .prev:hover {
     background: #f8f8f8;
     cursor: pointer;
+  }
+
+  button img {
+    transform: scale(0.75);
   }
 }
