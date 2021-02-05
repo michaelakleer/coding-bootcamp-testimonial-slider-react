@@ -39,10 +39,10 @@ export default function App() {
                 <img src={John} alt="Portrait of John" className="portrait" />
               </div>
               <button className="button prev" onClick={displayJohn}>
-                <img src={Prev} alt="Previous Button" />
+                <img src={Prev} alt="Previous Button" className="prevImg" />
               </button>
               <button className="button next" onClick={displayJohn}>
-                <img src={Next} alt="Next Button" />
+                <img src={Next} alt="Next Button" className="nextImg" />
               </button>
             </div>
           </section>
