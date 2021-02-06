@@ -13,16 +13,13 @@ span {
   font-family: "Inter", sans-serif;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1440px) {
   .App {
     background-image: url(images/pattern-curve.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 30rem;
-  }
-
-  .slider {
-    padding: 0 25px;
+    padding-right: 22px;
   }
 
   .container {
@@ -32,7 +29,7 @@ span {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    padding: 70px 40px;
+    padding: 70px 40px 70px 65px;
     background-image: url(images/pattern-bg.svg);
     background-repeat: no-repeat;
     background-position: right 12px bottom 55%;
@@ -61,7 +58,7 @@ span {
 
   .photo {
     margin: 0 auto;
-    padding-left: 56px;
+    padding-left: 58px;
     flex: 1;
   }
 
@@ -113,48 +110,43 @@ span {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .App {
     background-image: url(images/pattern-curve.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: 275px;
-  }
-
-  .slider {
-    padding: 0 25px;
-    background-image: url(images/pattern-quotes.svg);
-    background-repeat: no-repeat;
-    background-position: left 152px bottom 264px;
-    background-size: 58px;
+    background-size: 550px;
   }
 
   .container {
     min-height: 100vh;
+    max-width: 100%;
+  }
+
+  .slider {
     width: 100%;
-    max-width: 757px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    background-image: url(images/pattern-bg.svg);
-    background-repeat: no-repeat;
-    background-position: left 1px top 5%;
-    background-size: 323px;
+    min-height: 100vh;
+    padding-top: 200px;
   }
 
   .slideOne,
   .slideTwo {
     display: flex;
     flex-direction: column-reverse;
-    height: auto;
   }
 
   .testimonial {
+    display: block;
+    margin: 0 auto;
     padding-top: 30px;
     color: #202047;
-    width: 311px;
+    width: 550px;
     height: 228px;
     text-align: center;
+    background-image: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: 58px;
+    background-position: left 245px bottom 173px;
   }
 
   .text {
@@ -174,14 +166,17 @@ span {
   }
 
   .photo {
-    position: relative;
-    bottom: 44px;
-    left: 35px;
+    margin: 10px auto 10px;
+    background: url(images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 327px;
+    padding: 2.6em 2.3em 2.3em;
   }
 
   .portrait {
     width: 254px;
-    height: auto;
+    height: 253px;
     border-radius: 5px;
     box-shadow: 20px 35px 65px -50px #6c52a7;
   }
@@ -194,16 +189,16 @@ span {
   }
 
   .next {
-    top: 280px;
-    left: 185px;
+    top: 485px;
+    left: 383px;
     padding: 10px 13px 6px 13px;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
   }
 
   .prev {
-    top: 280px;
-    left: 147px;
+    top: 485px;
+    left: 345px;
     padding: 10px 13px 6px 13px;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -228,31 +223,18 @@ span {
     background-size: 275px;
   }
 
-  .slider {
-    padding: 0 25px;
-    background-image: url(images/pattern-quotes.svg);
-    background-repeat: no-repeat;
-    background-position: left 152px bottom 264px;
-    background-size: 58px;
-  }
-
   .container {
     min-height: 100vh;
+  }
+
+  .slider {
     width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    background-image: url(images/pattern-bg.svg);
-    background-repeat: no-repeat;
-    background-position: left 1px top 5%;
-    background-size: 323px;
   }
 
   .slideOne,
   .slideTwo {
     display: flex;
     flex-direction: column-reverse;
-    height: auto;
   }
 
   .testimonial {
@@ -263,6 +245,10 @@ span {
     width: 311px;
     height: 228px;
     text-align: center;
+    background-image: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: 58px;
+    background-position: left 127px bottom 173px;
   }
 
   .text {
@@ -282,14 +268,17 @@ span {
   }
 
   .photo {
-    position: relative;
-    bottom: 44px;
-    left: 35px;
+    margin: 10px auto 10px;
+    background: url(images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 327px;
+    padding: 2.6em 2.3em 2.3em;
   }
 
   .portrait {
     width: 254px;
-    height: auto;
+    height: 253px;
     border-radius: 5px;
     box-shadow: 20px 35px 65px -50px #6c52a7;
   }
@@ -302,7 +291,7 @@ span {
   }
 
   .next {
-    top: 280px;
+    top: 285px;
     left: 185px;
     padding: 10px 13px 6px 13px;
     border-top-right-radius: 50%;
@@ -310,7 +299,7 @@ span {
   }
 
   .prev {
-    top: 280px;
+    top: 285px;
     left: 147px;
     padding: 10px 13px 6px 13px;
     border-top-left-radius: 50%;
