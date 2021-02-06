@@ -1,7 +1,7 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 span {
@@ -10,63 +10,104 @@ span {
 }
 
 .App {
+  background-image: url(images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
   font-family: "Inter", sans-serif;
 }
 
-@media (min-width: 1440px) {
+.container {
+  min-height: 100vh;
+}
+
+.slideOne,
+.slideTwo {
+  display: flex;
+}
+
+.testimonial {
+  background-image: url(images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  color: #202047;
+}
+
+.text {
+  font-weight: 300;
+}
+
+.portrait {
+  border-radius: 5px;
+  box-shadow: 20px 35px 65px -50px #6c52a7;
+}
+
+.next,
+.prev {
+  border: none;
+  background: #fff;
+  position: absolute;
+}
+
+.next {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.prev {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.next:hover,
+.prev:hover {
+  background: #f8f8f8;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
   .App {
-    background-image: url(images/pattern-curve.svg);
-    background-repeat: no-repeat;
-    background-position: left bottom;
     background-size: 30rem;
     padding-right: 22px;
   }
 
   .container {
-    min-height: 100vh;
-    width: 100%;
-    max-width: 1350px;
-    margin: 0 auto;
-    display: flex;
     align-items: center;
-    padding: 70px 40px 70px 65px;
     background-image: url(images/pattern-bg.svg);
     background-repeat: no-repeat;
     background-position: right 12px bottom 55%;
     background-size: 42rem;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1350px;
+    padding: 70px 40px 70px 65px;
+    width: 100%;
   }
 
   .slideOne,
   .slideTwo {
-    display: flex;
     position: relative;
   }
 
   .testimonial {
-    color: #202047;
-    width: 688px;
-    height: 220px;
-    padding-top: 160px;
-    padding-left: 30px;
-    margin-right: -9rem;
-    background-image: url(images/pattern-quotes.svg);
-    background-repeat: no-repeat;
     background-position: left 22% top 78%;
     background-size: 120px 100px;
+    height: 220px;
+    margin-right: -9rem;
+    padding-top: 160px;
+    padding-left: 30px;
+    width: 688px;
     z-index: 9;
   }
 
   .photo {
+    flex: 1;
     margin: 0 auto;
     padding-left: 58px;
-    flex: 1;
   }
 
   .text {
-    font-weight: 300;
+    font-size: 32px;
     line-height: 45px;
     margin-bottom: 35px;
-    font-size: 32px;
   }
 
   .name {
@@ -74,86 +115,58 @@ span {
   }
 
   .portrait {
-    width: 520px;
     height: auto;
-    border-radius: 5px;
-    box-shadow: 20px 35px 65px -50px #6c52a7;
-  }
-
-  .next,
-  .prev {
-    position: absolute;
-    border: none;
-    background: #fff;
+    width: 520px;
   }
 
   .next {
     top: 493px;
     left: 715px;
     padding: 18px 19px 14px 22px;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
   }
 
   .prev {
     top: 493px;
     left: 663px;
     padding: 18px 22px 14px 19px;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-  }
-
-  .next:hover,
-  .prev:hover {
-    background: #f8f8f8;
-    cursor: pointer;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .App {
-    background-image: url(images/pattern-curve.svg);
-    background-repeat: no-repeat;
-    background-position: left bottom;
     background-size: 550px;
   }
 
   .container {
-    min-height: 100vh;
     max-width: 100%;
   }
 
   .slider {
-    width: 100%;
     min-height: 100vh;
     padding-top: 200px;
+    width: 100%;
   }
 
   .slideOne,
   .slideTwo {
-    display: flex;
     flex-direction: column-reverse;
   }
 
   .testimonial {
-    display: block;
-    margin: 0 auto;
-    padding-top: 30px;
-    color: #202047;
-    width: 550px;
-    height: 228px;
-    text-align: center;
-    background-image: url(images/pattern-quotes.svg);
-    background-repeat: no-repeat;
     background-size: 58px;
     background-position: left 245px bottom 173px;
+    display: block;
+    height: 228px;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    width: 550px;
   }
 
   .text {
-    font-weight: 300;
+    font-size: 18px;
     line-height: 25px;
     margin-bottom: 18px;
-    font-size: 18px;
   }
 
   .name {
@@ -166,48 +179,29 @@ span {
   }
 
   .photo {
-    margin: 10px auto 10px;
     background: url(images/pattern-bg.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 327px;
+    margin: 10px auto 10px;
     padding: 2.6em 2.3em 2.3em;
   }
 
   .portrait {
-    width: 254px;
     height: 253px;
-    border-radius: 5px;
-    box-shadow: 20px 35px 65px -50px #6c52a7;
-  }
-
-  .next,
-  .prev {
-    position: absolute;
-    border: none;
-    background: #fff;
+    width: 254px;
   }
 
   .next {
     top: 485px;
     left: 383px;
     padding: 10px 13px 6px 13px;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
   }
 
   .prev {
     top: 485px;
     left: 345px;
     padding: 10px 13px 6px 13px;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-  }
-
-  .next:hover,
-  .prev:hover {
-    background: #f8f8f8;
-    cursor: pointer;
   }
 
   button img {
@@ -217,14 +211,7 @@ span {
 
 @media (max-width: 767px) {
   .App {
-    background-image: url(images/pattern-curve.svg);
-    background-repeat: no-repeat;
-    background-position: left bottom;
     background-size: 275px;
-  }
-
-  .container {
-    min-height: 100vh;
   }
 
   .slider {
@@ -233,29 +220,24 @@ span {
 
   .slideOne,
   .slideTwo {
-    display: flex;
     flex-direction: column-reverse;
   }
 
   .testimonial {
-    display: block;
-    margin: 0 auto;
-    padding-top: 30px;
-    color: #202047;
-    width: 311px;
-    height: 228px;
-    text-align: center;
-    background-image: url(images/pattern-quotes.svg);
-    background-repeat: no-repeat;
     background-size: 58px;
     background-position: left 127px bottom 173px;
+    display: block;
+    height: 228px;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    width: 311px;
   }
 
   .text {
-    font-weight: 300;
+    font-size: 18px;
     line-height: 25px;
     margin-bottom: 18px;
-    font-size: 18px;
   }
 
   .name {
@@ -268,48 +250,29 @@ span {
   }
 
   .photo {
-    margin: 10px auto 10px;
     background: url(images/pattern-bg.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 327px;
+    margin: 10px auto 10px;
     padding: 2.6em 2.3em 2.3em;
   }
 
   .portrait {
     width: 254px;
     height: 253px;
-    border-radius: 5px;
-    box-shadow: 20px 35px 65px -50px #6c52a7;
-  }
-
-  .next,
-  .prev {
-    position: absolute;
-    border: none;
-    background: #fff;
   }
 
   .next {
     top: 285px;
     left: 185px;
     padding: 10px 13px 6px 13px;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
   }
 
   .prev {
     top: 285px;
     left: 147px;
     padding: 10px 13px 6px 13px;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-  }
-
-  .next:hover,
-  .prev:hover {
-    background: #f8f8f8;
-    cursor: pointer;
   }
 
   button img {
