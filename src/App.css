@@ -118,106 +118,6 @@ span {
     background-image: url(images/pattern-curve.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: 30rem;
-  }
-
-  .slider {
-    padding: 0 25px;
-  }
-
-  .container {
-    min-height: 100vh;
-    width: 100%;
-    max-width: 1350px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 70px 40px;
-    background-image: url(images/pattern-bg.svg);
-    background-repeat: no-repeat;
-    background-position: right 12px bottom 55%;
-    background-size: 42rem;
-  }
-
-  .slideOne,
-  .slideTwo {
-    display: flex;
-    position: relative;
-  }
-
-  .testimonial {
-    color: #202047;
-    width: 688px;
-    height: 220px;
-    padding-top: 160px;
-    padding-left: 30px;
-    margin-right: -9rem;
-    background-image: url(images/pattern-quotes.svg);
-    background-repeat: no-repeat;
-    background-position: left 22% top 78%;
-    background-size: 120px 100px;
-    z-index: 9;
-  }
-
-  .photo {
-    margin: 0 auto;
-    padding-left: 56px;
-    flex: 1;
-  }
-
-  .text {
-    font-weight: 300;
-    line-height: 45px;
-    margin-bottom: 35px;
-    font-size: 32px;
-  }
-
-  .name {
-    font-size: 20px;
-  }
-
-  .portrait {
-    width: 520px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 20px 35px 65px -50px #6c52a7;
-  }
-
-  .next,
-  .prev {
-    position: absolute;
-    border: none;
-    background: #fff;
-  }
-
-  .next {
-    top: 493px;
-    left: 715px;
-    padding: 18px 19px 14px 22px;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-  }
-
-  .prev {
-    top: 493px;
-    left: 663px;
-    padding: 18px 22px 14px 19px;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-  }
-
-  .next:hover,
-  .prev:hover {
-    background: #f8f8f8;
-    cursor: pointer;
-  }
-}
-
-@media (max-width: 767px) {
-  .App {
-    background-image: url(images/pattern-curve.svg);
-    background-repeat: no-repeat;
-    background-position: left bottom;
     background-size: 275px;
   }
 
@@ -250,6 +150,114 @@ span {
   }
 
   .testimonial {
+    padding-top: 30px;
+    color: #202047;
+    width: 311px;
+    height: 228px;
+    text-align: center;
+  }
+
+  .text {
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  span {
+    display: block;
+    line-height: 19px;
+  }
+
+  .photo {
+    position: relative;
+    bottom: 44px;
+    left: 35px;
+  }
+
+  .portrait {
+    width: 254px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 20px 35px 65px -50px #6c52a7;
+  }
+
+  .next,
+  .prev {
+    position: absolute;
+    border: none;
+    background: #fff;
+  }
+
+  .next {
+    top: 280px;
+    left: 185px;
+    padding: 10px 13px 6px 13px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+
+  .prev {
+    top: 280px;
+    left: 147px;
+    padding: 10px 13px 6px 13px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+
+  .next:hover,
+  .prev:hover {
+    background: #f8f8f8;
+    cursor: pointer;
+  }
+
+  button img {
+    transform: scale(0.75);
+  }
+}
+
+@media (max-width: 767px) {
+  .App {
+    background-image: url(images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 275px;
+  }
+
+  .slider {
+    padding: 0 25px;
+    background-image: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: left 152px bottom 264px;
+    background-size: 58px;
+  }
+
+  .container {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-image: url(images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: left 1px top 5%;
+    background-size: 323px;
+  }
+
+  .slideOne,
+  .slideTwo {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .testimonial {
+    display: block;
+    margin: 0 auto;
     padding-top: 30px;
     color: #202047;
     width: 311px;
