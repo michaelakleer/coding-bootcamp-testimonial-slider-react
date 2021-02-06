@@ -21,8 +21,8 @@ export default function App() {
   if (slide === "tanya") {
     return (
       <div className="App">
-        <div className="slider">
-          <section className="container">
+        <section className="container">
+          <div className="slider">
             <div className="slideTwo">
               <div className="testimonial">
                 <p className="text">
@@ -45,15 +45,15 @@ export default function App() {
                 <img src={Next} alt="Next Button" className="nextImg" />
               </button>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     );
   } else {
     return (
       <div className="App">
-        <div className="slider">
-          <section className="container">
+        <section className="container">
+          <div className="slider">
             <div className="slideOne">
               <div className="testimonial">
                 <p className="text">
@@ -76,8 +76,8 @@ export default function App() {
                 <img src={Next} alt="Next Button" />
               </button>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     );
   }
